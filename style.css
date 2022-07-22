@@ -1,0 +1,137 @@
+body{
+	text-align:center;
+	background-image: linear-gradient(rgb(202, 174, 174), black);
+	color: whitesmoke;
+	font-family: 'copperplate';
+}
+
+#newPuzzBrd{
+	width:400px;
+	height:400px;
+	position:relative;
+	margin:0px auto;
+}
+
+body, #shuffle{
+	font-size:14pt;
+}
+
+.gameTile{
+	width:90px;
+	height:90px;
+	border:5px solid black;
+	font-size:50pt;
+	font-family: 'Courier New', Courier, monospace;
+	color: white;
+	-webkit-text-stroke: black 1px;
+	position:absolute;
+	cursor:default;
+}
+
+#usrWins{
+	color:pink;
+	font-weight:bold;
+  font-size: 30px;
+}
+
+h1{
+	color: white;
+	font-family: 'monaco', serif;
+  -webkit-text-stroke: black 0.8px;
+
+}
+
+h4{
+  font-family: 'monaco', serif;
+color: black;
+font-size: small;
+}
+
+.shufflebtn {
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  font-family: 'copperplate';
+}
+
+.shufflebtn:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.shufflebtn:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+.stopwatch {
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  border: 2px solid pink;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  font-family: 'copperplate';
+}
+
+h6{
+  color: pink;
+}
